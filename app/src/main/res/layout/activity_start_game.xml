@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_start_game"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.tictactoe.StartGame"
+    android:orientation="vertical"
+    android:background="#e6e6ff">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/tableLayout">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:text=""
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#ff0000"
+                android:id="@+id/btn1"
+                android:background="@android:color/background_dark" />
+
+            <Button
+                android:text=""
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#ff0000"
+                android:id="@+id/btn2"
+                android:background="@android:color/background_light" />
+
+            <Button
+                android:text=""
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#ff0000"
+                android:id="@+id/btn3"
+                android:background="@android:color/background_dark" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/btn4"
+                android:textColor="#ff0000"
+                android:background="@android:color/background_light" />
+
+            <Button
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#ff0000"
+                android:id="@+id/btn5"
+                android:background="@android:color/background_dark" />
+
+            <Button
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#ff0000"
+                android:gravity="center"
+                android:id="@+id/btn6"
+                android:background="@android:color/background_light" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:text=""
+                android:textColor="#ff0000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/btn7"
+                android:background="@android:color/background_dark" />
+
+            <Button
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ff0000"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/btn8"
+                android:background="@android:color/background_light" />
+
+            <Button
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ff0000"
+
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/btn9"
+                android:background="@android:color/background_dark" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="3"
+        android:id="@+id/score_2"
+        android:layout_alignBaseline="@+id/player2_score"
+        android:layout_alignBottom="@+id/player2_score"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="42dp"
+        android:ems="3"
+        android:id="@+id/player1_score"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/choose2"
+        android:layout_alignBaseline="@+id/player2"
+        android:layout_alignBottom="@+id/player2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/player2"
+        android:ems="3"
+        android:layout_alignBaseline="@+id/choose1"
+        android:layout_alignBottom="@+id/choose1"
+        android:layout_toRightOf="@+id/player2_score"
+        android:layout_toEndOf="@+id/player2_score"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:ems="3"
+        android:id="@+id/score1"
+        android:layout_alignBaseline="@+id/player1_score"
+        android:layout_alignBottom="@+id/player1_score"
+        android:layout_toRightOf="@+id/player1"
+        android:layout_toEndOf="@+id/player1"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/player2_score"
+        android:ems="3"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@+id/score1"
+        android:layout_alignBottom="@+id/score1"
+        android:layout_toRightOf="@+id/choose1"
+        android:layout_toEndOf="@+id/choose1"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/choose1"
+        android:ems="3"
+        android:layout_marginLeft="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_alignBaseline="@+id/player1"
+        android:layout_alignBottom="@+id/player1"
+        android:layout_alignLeft="@+id/score1"
+        android:layout_alignStart="@+id/score1"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        android:id="@+id/player1"
+        android:ems="3"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/mute"
+        android:background="@drawable/off"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/btn_load"
+        android:background="@drawable/loadgame"
+        android:layout_alignBaseline="@+id/btn_new_game"
+        android:layout_alignBottom="@+id/btn_new_game"
+        android:layout_toLeftOf="@+id/choose2"
+        android:layout_toStartOf="@+id/choose2"
+        android:layout_marginRight="18dp"
+        android:layout_marginEnd="18dp" />
+
+    <Button
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/btn_new_game"
+        android:background="@drawable/newgame"
+        android:layout_alignBaseline="@+id/btn_save"
+        android:layout_alignBottom="@+id/btn_save"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btn_save"
+        style="@android:style/Widget.Button.Inset"
+        android:background="@drawable/saveicon"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="22dp"
+        android:layout_above="@+id/player1_score"
+        android:layout_toLeftOf="@+id/score1"
+        android:layout_toStartOf="@+id/score1" />
+
+    <Button
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/winner"
+        android:background="@drawable/winner"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
